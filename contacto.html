@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pasteleria Artesanal">
+
+    <link rel="preload" href="src/css/style.css" as="style">
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Haz tu Pedido</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="barra">
+            <a class="logo" href="index.html">
+                <h1 class="logo__nombre no-margin centrar-texto">Pasteleria<span class="logo__bold">Artesanal</span></h1>
+            </a>
+
+            <nav class="navegacion">
+                <a class="navegacion__enlace" href="index.html#heading__trabajos">Nuestros Trabajos</a>
+                <a class="navegacion__enlace" href="index.html#heading__sabores">Sabores</a>
+                <a class="navegacion__enlace" href="index.html#heading__adornos">Adornos</a>
+                <a class="navegacion__enlace" href="index.html#heading__map">Dirección</a>
+                <a class="navegacion__enlace--contacto" href="admin.html">Admin</a>
+            </nav>
+        </div>
+
+        <div class="header__texto">
+            <h2 class="no-margin">Haz Tu Pedido</h2>
+        </div>
+    </header>
+
+    <div class="contenedor">
+        <h3 class="centrar-texto">Hacer Pedido</h3>
+
+        <form class="formulario">
+            <fieldset>
+                <legend>Datos del Pedido</legend>
+
+                <div class="campo">
+                    <label class="campo__label" for="nombre">Nombre</label>
+                    <input class="campo__field" type="text" id="nombre" placeholder="Nombre">
+                </div>
+
+                <div class="campo">
+                    <label class="campo__label" for="telf">Teléfono</label>
+                    <input class="campo__field" type="number" id="telf" placeholder="Teléfono">
+                </div>
+
+                <div class="campo">
+                    <label class="campo__label" for="email">Email</label>
+                    <input class="campo__field" type="text" id="email" placeholder="Email">
+                </div>
+
+                <div class="campo">
+                    <label class="campo__label" for="descripcion">Descripción</label>
+                    <textarea class="campo__field--textarea" id="descripcion" cols="30" rows="10"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Sabores</legend>
+                <div class="campo--sabores">
+
+                    <div class="contenedor-sabor">
+                        <input class="campo__field" type="checkbox" id="chocolate" value="chocolate">
+                        <label class="campo__label" for="chocolate">Chocolate</label>
+                    </div>
+
+                    <div class="contenedor-sabor">
+                        <input class="campo__field" type="checkbox" id="limon" value="limon">
+                        <label class="campo__label" for="limon">Limón</label>
+                    </div>
+
+                    <div class="contenedor-sabor">
+                        <input class="campo__field" type="checkbox" id="vainilla" value="vainilla">
+                        <label class="campo__label" for="vainilla">Vainilla</label>
+                    </div>
+
+                    <div class="contenedor-sabor">
+                        <input class="campo__field" type="checkbox" id="red-velvet" value="red-velvet">
+                        <label class="campo__label" for="red-velvet">Red-Velvet</label>
+                    </div>
+        
+                    <div class="contenedor-sabor">
+                        <input class="campo__field" type="checkbox" id="zanahoria" value="zanahoria">
+                        <label class="campo__label" for="zanahoria">Zanahoria</label>
+                    </div>
+                    
+                    <div class="contenedor-sabor">
+                        <input class="campo__field" type="checkbox" id="cheesecake" value="cheesecake">
+                        <label class="campo__label" for="cheesecake">CheeseCake</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Adornos</legend>
+
+                <div class="campo--adornos">
+                    <div class="contenedor-adorno">
+                        <input class="campo__field" type="checkbox" id="adorno1" value="adorno1">
+                        <label class="campo__label" for="adorno1">Adorno</label>
+                    </div>
+    
+                    <div class="contenedor-adorno">
+                        <input class="campo__field" type="checkbox" id="adorno2" value="adorno2">
+                        <label class="campo__label" for="adorno2">Adorno</label>
+                    </div>
+
+
+                    <div class="contenedor-adorno">
+                        <input class="campo__field" type="checkbox" id="adorno3" value="adorno3">
+                        <label class="campo__label" for="adorno3">Adorno</label>
+                    </div>
+
+
+                    <div class="contenedor-adorno">
+                        <input class="campo__field" type="checkbox" id="adorno4" value="adorno4">
+                        <label class="campo__label" for="adorno4">Adorno</label>
+                    </div>
+
+
+                    <div class="contenedor-adorno">
+                        <input class="campo__field" type="checkbox" id="adorno5" value="adorno5">
+                        <label class="campo__label" for="adorno5">Adorno</label>
+                    </div>
+
+                    <div class="contenedor-adorno">
+                        <input class="campo__field" type="checkbox" id="adorno6" value="adorno6">
+                        <label class="campo__label" for="adorno6">Adorno</label>
+                    </div>
+
+                </div>
+            </fieldset>
+
+            <div class="campo">
+                <input class="boton boton--primario" type="submit" value="Enviar Pedido">
+            </div>
+            
+        </form>
+    </div>
+    
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Pasteleria<span class="logo__bold">Artesanal</span></h1>
+                </a>
+                
+                <p>Todos los derechos reservados 2022</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="src/js/script.js"></script>
+</body>
+</html>

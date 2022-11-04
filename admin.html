@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pasteleria Artesanal">
+
+    <link rel="preload" href="src/css/style.css" as="style">
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Admin</title>
+</head>
+
+<body>
+    <header class="header-admin">
+        <div class="barra">
+            <a class="logo" href="index.html">
+                <h1 class="logo__nombre no-margin centrar-texto">Pasteleria<span class="logo__bold">Artesanal</span></h1>
+            </a>
+
+            <nav class="navegacion">
+                <a class="navegacion__enlace" href="#inventario-sabores">Sabores</a>
+                <a class="navegacion__enlace" href="#inventario-adornos">Adornos</a>
+                <a class="navegacion__enlace" href="#pedidos">Pedidos</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="contenedor__admin">
+            <div class="contenedor__inventario">
+                <h2 id="inventario-sabores">Sabores</h2>
+                <table>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Total</th>
+                    </tr>
+                    <tr>
+                        <td>Chocolate</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Limón</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Vainilla</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Red-Velvet</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Zanahoria</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>CheeseCake</td>
+                        <td>10</td>
+                    </tr>
+                </table>
+
+                <h2 id="inventario-adornos">Adornos</h2>
+                <table>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Total</th>
+                    </tr>
+                    <tr>
+                        <td>Coco</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Fondant</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Mantequilla de maní</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Topper</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Cubierta de chocolate</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Fresas</td>
+                        <td>10</td>
+                    </tr>
+                </table>
+
+                <h2 id="pedidos">Pedidos</h2>
+                <div class="table__pedidos">
+                    <table>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Teléfono</th>
+                            <th>Email</th>
+                            <th>Descripción</th>
+                            <th>Sabores</th>
+                            <th>Adornos</th>
+                            <th>Fecha</th>
+                        </tr>
+                        <tr>
+                            <td>Pedro Ruiz</td>
+                            <td>4248569874</td>
+                            <td>pruiz@gmail.com</td>
+                            <td>Torta grande con escrito de feliz cumpleaños</td>
+                            <td>Chocolate, Vainilla</td>
+                            <td>Fresas, Fondant</td>
+                            <td>02/10/2022</td>
+                        </tr>
+    
+                        <tr>
+                            <td>Andrea Fuentes</td>
+                            <td>4244896513</td>
+                            <td>andyfuentes@gmail.com</td>
+                            <td>CheeseCake de fresas con decoracion de fresas</td>
+                            <td>CheeseCake</td>
+                            <td>Fresas</td>
+                            <td>20/10/2022</td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                    
+            </div>
+            
+        </div>
+    </main>
+
+    <script src="src/js/app.js"></script>
+</body>
+</html>
