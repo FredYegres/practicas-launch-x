@@ -1,0 +1,301 @@
+:root {
+    --primary-font: 'Modelica';
+    --secondary-font: 'Poppins', sans-serif;
+    --primary-blue: #3454d2;
+    --secondary-blue: #1f3e72;
+    --button-blue: #3858d6;
+    --background-fade-blue: #3760da;
+    --background-fade-clear-blue: #0998e6;
+    --background-fade-clearest-blue: #069be6;
+    --yellow: #ffd012;
+    --grey: #6d7b93;
+    --clear-grey: #eef3ff;
+    --white: #ffffff;
+    --black: #000000;
+    --sm: 1.8rem;
+    --md: 2.7rem;
+    --lg: 5.7rem;
+}
+
+@font-face {
+    font-family: 'Modelica';
+    src: url('../fonts/BwModelica-ExtraBold.woff2') format('woff2'),
+      url('../fonts/BwModelica-ExtraBold.woff') format('woff');
+    font-style: normal;
+    font-weight: 700;
+}
+  
+  @font-face {
+    font-family: 'Modelica';
+    src: url('../fonts/BwModelica-Regular.woff2') format('woff2'),
+      url('../fonts/BwModelica-Regular.woff') format('woff');
+    font-style: normal;
+    font-weight: 500;
+}
+  
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    font-family: var(--primary-font);
+}
+
+p {
+    margin: 0;
+    font-family: var(--secondary-font);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(250, 250, 250, .9);
+    z-index: 4;
+    border: 3px solid var(--white);
+}
+
+.header__logo {
+    font-size: var(--md);
+    color: var(--primary-blue);
+    margin-left: 12rem;
+}
+
+.header__nav {
+    margin-right: 12rem;
+}
+
+.header__link {
+    margin-right: .7rem;
+    text-decoration: none;
+    font-family: var(--secondary-font);
+    color: var(--grey);
+    font-weight: 500;
+    padding: 1.5rem 2.5rem;
+    font-size: var(--sm);
+}
+
+.header__link:last-of-type {
+    margin-right: 0;
+}
+
+.primary-button,
+.header__link:hover {
+    background-color: var(--button-blue);
+    color: var(--white);
+    padding: 1.5rem 2.5rem;
+    border-radius: .5rem;
+    font-family: var(--secondary-font);
+    box-shadow: 3px 5px 8px 2px rgba(31, 62, 114, .4);
+    border: none;
+    font-size: var(--sm);
+    cursor: pointer;
+}
+
+.submit-button {
+    padding: 1.5rem 4rem;
+    margin-left: 5rem;
+}
+
+.dashboard {
+    margin-top: 12.6rem;
+}
+
+.first-section__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    height: 77.1rem;
+}
+
+.first-section__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-section__text-block {
+    margin-bottom: 2rem;
+    width: 65%;
+}
+
+.first-section__text-block h1 {
+    font-size: var(--lg);
+    color: var(--secondary-blue);
+    margin-bottom: 2.2rem;
+}
+
+.first-section__text-block p {
+    font-family: var(--secondary-font);
+    color: var(--grey);
+    font-size: var(--sm);
+    font-weight: 500;
+    width: 90%;
+    line-height: 1.8;
+}
+
+.first-section__icons {
+    display: flex;
+    align-items: center;
+    color: var(--secondary-blue);
+    font-weight: 600;
+    margin: 2rem 0 0 -4.5rem;
+    font-size: 1.5rem;
+}
+
+.first-section__icons span {
+    margin-right: 2rem;
+    padding: .2rem;
+    color: var(--yellow);
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, .1);
+    background-color: rgba(255, 208, 18, .3);
+    border-radius: .5rem;
+}
+
+.first-section__icons span:nth-child(3) {
+    margin-left: 4rem;
+}
+
+.first-section__image {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 49%;
+    height: 94rem;
+    background: rgb(9,152,230);
+    background: linear-gradient(112deg, rgba(9,152,230,1) 0%, rgba(55,96,218,1) 76%);
+}
+
+.first-section__image img {
+    width: 50rem;
+}
+
+.first-section__over {
+    z-index: 3;
+    grid-column: 1;
+    margin-left: -9.5rem;
+    margin-top: 8rem;
+}
+
+.icon__container {
+    display: flex;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--secondary-blue);
+}
+
+.icon__container > div {
+    display: flex;
+    align-items: center;
+}
+
+.icon__container span{
+    margin-right: 2rem;
+    padding: .2rem;
+    color: var(--primary-blue);
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, .2);
+    background-color: rgba(52, 84, 210, .15);
+    border-radius: .5rem;
+}
+
+.over__info {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-top: 2.5rem;
+    padding: 4rem;
+    background-color: rgba(250, 250, 250, .9);
+    border: 3px solid var(--white);
+    border-radius: .5rem;
+    box-shadow: 20px 8px 20px 13px rgba(16, 62, 143, 0.2);
+}
+
+.over__info span {
+    margin-right: 2rem;
+    padding: .2rem;
+    color: var(--primary-blue);
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, .2);
+    background-color: rgba(52, 84, 210, .15);
+    border-radius: .5rem;
+}
+
+.over__info > div:nth-child(1) > div.icon-text {
+    margin-left: 0;
+}
+
+.icon-text {
+    margin: 0 0 1rem 5rem;
+    display: flex;
+    align-items: center;
+    color: var(--grey);
+}
+
+.icon-text span {
+    margin-right: 2rem;
+}
+
+.icon-text p {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.over__info > div:nth-child(1) > div:nth-child(2) {
+    margin-left: 3.8rem;
+}
+
+.info__container div:not(.icon-text) {
+    margin-left: 9rem;
+    color: var(--secondary-blue);
+}
+
+.info__container div:not(.icon-text) p {
+    font-weight: 600;
+    font-size: 2.2rem;
+    font-family: var(--primary-font);
+}
+
+.second-section__container {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-section__images {
+    display: flex;
+    gap: 5rem;
+}
+
+.second-section__images img {
+    width: 22rem;
+    height: 10rem;
+    filter: invert(0.4) sepia(1) hue-rotate(189deg) saturate(100%);
+    opacity: .2;
+}
+
+.material-symbols-rounded {
+    font-size: 1.5rem;
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 700,
+    'GRAD' 200,
+    'opsz' 20
+}
