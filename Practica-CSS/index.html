@@ -14,7 +14,10 @@
 </head>
 <body>
     <header class="header">
-        <h1 class="header__logo">Vaccination</h1>
+        <a href="./index.html">
+            <h1 class="header__logo">Vaccination</h1>
+        </a>
+
         <nav class="header__nav">
             <a class="header__link" href="#">Database</a>
             <a class="header__link" href="#">Education</a>
@@ -51,41 +54,45 @@
                     <p>Schedule your vaccinations</p>
                 </div>
 
-                <div class="over__info">
+                <form action="./index.html" class="over__info">
                     <div class="info__container">
                         <div class="icon-text">
                             <span class="material-symbols-rounded">location_on</span>
-                            <p>Location</p>
+                            <label for="location">Location</label>
                         </div>
                         <div>
-                            <p>Jakarta Utara</p>
+                            <input id="location" autocomplete="off" class="icon-text__input" type="text" placeholder="Jakarta Utara">
                         </div>
                     </div>
                     
                     <div class="info__container">
                         <div class="icon-text">
                             <span class="material-symbols-rounded">calendar_month</span>
-                            <p>Date</p>
+                            <label for="date">Date</label>
                         </div>
                         <div>
-                            <p>08 July 2021</p>
+                            <input class="icon-text__input date" type="date" id="date">
                         </div>
                     </div>
 
                     <div class="info__container">
                         <div class="icon-text">
                             <span class="material-symbols-rounded">drive_file_rename_outline</span>
-                            <p>Vaccine Type</p>
+                            <label for="vaccine">Vaccine Type</label>
                         </div>
                         <div>
-                            <p>Moderna</p>
+                            <select class="icon-text__input select" id="vaccine">
+                                <option value="">Select</option>
+                                <option value="astrazeneca">AstraZeneca</option>
+                                <option value="sinovac">Sinovac</option>
+                                <option value="pfizer">Pfizer</option>
+                                <option value="moderna">Moderna</option>
+                            </select>
                         </div>
                     </div>
 
-                    <form action="#">
-                        <input type="submit" value="Submit" class="primary-button submit-button">
-                    </form>
-                </div>
+                    <input type="submit" value="Submit" class="primary-button submit-button">
+                </form>
             </div>
 
             <div class="first-section__image">
@@ -104,35 +111,45 @@
         </section>
 
         <section class="third-section__container">
-            <h2>Why should I vaccine?</h2>
-            <p>In order to avoid any doubts about getting the COVID-19 vaccine, identify the following 4 benefits of COVID-19 vaccination:</p>
+            <div class="third-section__text">
+                <h2>Why should I vaccine?</h2>
+                <p>In order to avoid any doubts about getting the COVID-19 vaccine, identify the following 4 benefits of COVID-19 vaccination:</p>
+            </div>
 
             <div class="third-section__info">
-                <div>
-                    <span class="material-symbols-rounded">tune</span>
+                <div class="info__card">
+                    <div class="info__icon">
+                        <span class="material-symbols-rounded">tune</span>
+                    </div>
 
-                    <p>Minimize the spread of viruses</p>
+                    <p class="info__heading">Minimize the spread of viruses</p>
                     <p>Vaccine has been proven effective to prevent someone from getting infected with Coronavirus</p>
                 </div>
 
-                <div>
-                    <span class="material-symbols-rounded">verified_user</span>
+                <div class="info__card">
+                    <div class="info__icon">
+                        <span class="material-symbols-rounded">verified_user</span>
+                    </div>
 
-                    <p>Farming antibodies</p>
+                    <p class="info__heading">Forming antibodies</p>
                     <p>COVID-19 vaccine proven to help shape antibody response for immune system</p>
                 </div>
 
-                <div>
-                    <span class="material-symbols-rounded">groups</span>
+                <div class="info__card">
+                    <div class="info__icon">
+                        <span class="material-symbols-rounded">groups</span>
+                    </div>
 
-                    <p>Protecting people nearby</p>
+                    <p class="info__heading">Protecting people nearby</p>
                     <p>The benefits of COVID-19 vaccination are the vaccine that we get can also help protect people around us</p>
                 </div>
 
-                <div>
-                    <span class="material-symbols-rounded">trending_up</span>
+                <div class="info__card">
+                    <div class="info__icon">
+                        <span class="material-symbols-rounded">trending_up</span>
+                    </div>
 
-                    <p>Creating group immunity</p>
+                    <p class="info__heading">Creating group immunity</p>
                     <p>COVID-19 vaccination is also beneficial for creating group immunity or herd immunity</p>
                 </div>
             </div>
@@ -143,40 +160,74 @@
                 <img src="./src/img/woman2.png" alt="woman">
             </div>
 
-            <div class="fourth-section__options">
-                <div class="option">
-                    <span class="material-symbols-rounded">gpp_bad</span>
-                    <p>Avoid alcoholic beverages</p>
-                    <span class="material-symbols-rounded">arrow_drop_down</span>
-
+            <div>
+                <div class="fourth-section__text">
+                    <h2>Preparations Before Vaccine</h2>
+                    <p>The success of vaccines is strongly influenced by the strength of the body's inmmune system. Therefore, there are several things that can be tried to make the COVID-19 vaccine work:</p>
                 </div>
+    
+                <div class="fourth-section__options">
+                    <div class="option__card">
+                        <div class="card__info">
+                            <span class="material-symbols-rounded">gpp_bad</span>
+                            <p>Avoid alcoholic beverages</p>
+                            <span class="material-symbols-rounded arrow">arrow_drop_down</span>
+                        </div>
+    
+                        <div class="card__hidden">
+                            <p>Stress has a profound effect on immune work. Moreover, prolonged stress can increase cortisol production and oxidative stress in the body.</p>
+                        </div>
+                    </div>
+    
+                    <div class="option__card">
+                        <div class="card__info">
+                            <span class="material-symbols-rounded">disabled_by_default</span>
+                            <p>Avoid stress</p>
+                            <span class="material-symbols-rounded arrow">arrow_drop_down</span>
+                        </div>
+    
+                        <div class="card__hidden">
+                            <p>Stress has a profound effect on immune work. Moreover, prolonged stress can increase cortisol production and oxidative stress in the body.</p>
+                        </div>
+                    </div>
+    
+                    <div class="option__card">
+                        <div class="card__info">
+                            <span class="material-symbols-rounded">insert_chart</span>
+                            <p>Eat healthy food</p>
+                            <span class="material-symbols-rounded arrow">arrow_drop_down</span>
+                        </div>
+    
+                        <div class="card__hidden">
+                            <p>Stress has a profound effect on immune work. Moreover, prolonged stress can increase cortisol production and oxidative stress in the body.</p>
+                        </div>
+                    </div>
+    
+                    <div class="option__card">
+                        <div class="card__info">
+                            <span class="material-symbols-rounded">check_box</span>
+                            <p>Get enough sleep</p>
+                            <span class="material-symbols-rounded arrow">arrow_drop_down</span>
+                        </div>
 
-                <div class="option">
-                    <span class="material-symbols-rounded">disabled_by_default</span>
-                    <p>Avoid stress</p>
-                    <span class="material-symbols-rounded">arrow_drop_down</span>
+                        <div class="card__hidden">
+                            <p>Stress has a profound effect on immune work. Moreover, prolonged stress can increase cortisol production and oxidative stress in the body.</p>
+                        </div>
+    
+                    </div>
+    
+                    <div class="option__card">
+                        <div class="card__info">
+                            <span class="material-symbols-rounded">favorite</span>
+                            <p>Exercise or physical activity</p>
+                            <span class="material-symbols-rounded arrow">arrow_drop_down</span>
+                        </div>
 
-                </div>
-
-                <div class="option">
-                    <span class="material-symbols-rounded">insert_chart</span>
-                    <p>Eat healthy food</p>
-                    <span class="material-symbols-rounded">arrow_drop_down</span>
-
-                </div>
-
-                <div class="option">
-                    <span class="material-symbols-rounded">check_box</span>
-                    <p>Get enough sleep</p>
-                    <span class="material-symbols-rounded">arrow_drop_down</span>
-
-                </div>
-
-                <div class="option">
-                    <span class="material-symbols-rounded">favorite</span>
-                    <p>Exercise or physical activity</p>
-                    <span class="material-symbols-rounded">arrow_drop_down</span>
-
+                        <div class="card__hidden">
+                            <p>Stress has a profound effect on immune work. Moreover, prolonged stress can increase cortisol production and oxidative stress in the body.</p>
+                        </div>
+    
+                    </div>
                 </div>
             </div>
         </section>
@@ -184,38 +235,59 @@
         <section class="fifth-section__container">
             <div class="fifth-section__text">
                 <div>
-                    <h1>Emergency Contact</h1>
+                    <h2>Emergency Contact</h2>
                     <p>Contact one of the contacts below if you or your family feel unwell and have similar sysmptoms such as Covid-19, make sure you also take care of yourself before reporting to us:</p>
                 </div>
 
-                <div class="cards__container">
-                    <div class="card">
+            </div>
+
+            <div class="cards__container">
+                <div class="card">
+                    <div class="card__info card__buttons">
                         <span class="material-symbols-rounded">phone_in_talk</span>
-                        <p>Call</p>
-                        <p>021.123.145.14</p>
-                        <button class="secondary-button">Call Now</button>
+                        <div>
+                            <p>Call</p>
+                            <p>021.123.145.14</p>
+                        </div>
                     </div>
 
-                    <div class="card">
+                    <button class="secondary-button">Call Now</button>
+                </div>
+
+                <div class="card">
+                    <div class="card__info card__buttons">
                         <span class="material-symbols-rounded">chat</span>
-                        <p>Chat</p>
-                        <p>021.123.145.14</p>
-                        <button class="secondary-button">Chat Now</button>
+                        <div>
+                            <p>Chat</p>
+                            <p>021.123.145.14</p>
+                        </div>
                     </div>
 
-                    <div class="card">
+                    <button class="secondary-button">Chat Now</button>
+                </div>
+
+                <div class="card">
+                    <div class="card__info card__buttons">
                         <span class="material-symbols-rounded">videocam</span>
-                        <p>Video Call</p>
-                        <p>021.123.145.14</p>
-                        <button class="secondary-button">Video Call Now</button>
+                        <div>
+                            <p>Video Call</p>
+                            <p>021.123.145.14</p>
+                        </div>
                     </div>
 
-                    <div class="card">
+                    <button class="secondary-button">Video Call Now</button>
+                </div>
+
+                <div class="card">
+                    <div class="card__info card__buttons">
                         <span class="material-symbols-rounded">mail</span>
-                        <p>Message</p>
-                        <p>021.123.145.14</p>
-                        <button class="secondary-button">Message Now</button>
+                        <div>
+                            <p>Message</p>
+                            <p>021.123.145.14</p>
+                        </div>
                     </div>
+
+                    <button class="secondary-button">Message Now</button>
                 </div>
             </div>
 
@@ -227,45 +299,44 @@
     </main>
     
     <footer class="footer">
-        <div class="footer-sections__container">
-            <div class="footer-sections__text">
-                <p>Vaccination</p>
-                <p>Our goal is to help the world free from the ongoing pandemic</p>
+        <div class="footer-sections__text">
+            <h1 class="footer__logo">Vaccination</h1>
+            <p>Our goal is to help the world free from the ongoing pandemic</p>
+        </div>
+
+        <div class="sections">
+            <div class="section">
+                <p>About</p>
+                <a  class="footer__link" href="#">About us</a>
+                <a  class="footer__link" href="#">Features</a>
+                <a  class="footer__link" href="#">News & Blog</a>
             </div>
 
-            <div class="sections">
-                <div class="section">
-                    <p>About</p>
-                    <a href="#">About us</a>
-                    <a href="#">Features</a>
-                    <a href="#">News & Blog</a>
-                </div>
+            <div class="section">
+                <p>Company</p>
+                <a  class="footer__link" href="#">How We Work?</a>
+                <a  class="footer__link" href="#">Capital</a>
+                <a  class="footer__link" href="#">Security</a>
+            </div>
 
-                <div class="section">
-                    <p>Company</p>
-                    <a href="#">How We Work?</a>
-                    <a href="#">Capital</a>
-                    <a href="#">Security</a>
-                </div>
-
-                <div class="section">
-                    <p>Support</p>
-                    <a href="#">FAQs</a>
-                    <a href="#">Support Center</a>
-                    <a href="#">Contact Us</a>
-                </div>
+            <div class="section">
+                <p>Support</p>
+                <a  class="footer__link" href="#">FAQs</a>
+                <a  class="footer__link" href="#">Support Center</a>
+                <a  class="footer__link" href="#">Contact Us</a>
             </div>
         </div>
 
-        <div class="footer__down">
-            <div class="rights">
-                <p>&copy2021 Vaccination. All rights reserved</p>
-            </div>
-            <div class="terms">
-                <a href="#">Terms & Agreements</a>
-                <a href="#">Privacy Policy</a>
-            </div>
+        <div class="rights">
+            <p>&copy2022 Vaccination. All rights reserved</p>
+        </div>
+
+        <div class="terms">
+            <a  class="footer__link link-terms" href="#">Terms & Agreements</a>
+            <a  class="footer__link link-terms" href="#">Privacy Policy</a>
         </div>
     </footer>
+
+    <script src="src/js/script.js"></script>
 </body>
 </html>
