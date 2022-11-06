@@ -1,6 +1,9 @@
 const date = document.querySelector('#date');
 const select = document.querySelector('#vaccine');
 const arrows = document.querySelectorAll('.arrow');
+const country = document.querySelector('#location');
+
+window.addEventListener('DOMContentLoaded', getCountry);
 
 date.value = new Date().toISOString().substring(0, 10);
 date.addEventListener('input', () => date.style = 'opacity: 1');
@@ -37,4 +40,16 @@ function displayText(e) {
         arrow.innerText = 'arrow_drop_up';
         icon.style = 'box-shadow: 3px 5px 6px 0px rgb(0 0 0 / .2);';
     }
+}
+
+
+async function getCountry() {
+    const url = 'http://ip-api.com/json';
+    await fetch(url)
+    .then(response => response.json())
+    .then(data => showcountry(data));
+}
+
+function showcountry(data) {
+    country.value = data.country;
 }
