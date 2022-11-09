@@ -44,7 +44,7 @@ function displayText(e) {
 
 
 async function getCountry() {
-    const url = 'http://ip-api.com/json';
+    const url = 'https://ip-api.com/json';
     await fetch(url)
     .then(response => response.json())
     .then(data => showcountry(data));
