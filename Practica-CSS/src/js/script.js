@@ -44,12 +44,12 @@ function displayText(e) {
 
 
 async function getCountry() {
-    const url = 'https://api.ipgeolocation.io/ipgeo?apiKey=20df3911f037420387692f3dc039c0d0';
+    const url = 'https://ipapi.co/json/';
     await fetch(url)
     .then(response => response.json())
     .then(data => showcountry(data));
 }
 
 function showcountry(data) {
-    country.value = data.country_capital;
+    country.value = data.city;
 }
